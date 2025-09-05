@@ -13,6 +13,9 @@ interface Parent {
 
 interface Child extends Parent{
 
+    static void goodDay(){
+        System.out.println("this is a good day for everyone ");
+    }
     
 }
 public class DefaultMethodDemo {
