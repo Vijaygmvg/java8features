@@ -11,5 +11,8 @@ public class AnonymousImplementation {
 
         };
         System.out.println(employee.getname());
+
+        Employee emp=()->"softwareEmploye";
+        System.out.println(emp.getname());
     }
 }
