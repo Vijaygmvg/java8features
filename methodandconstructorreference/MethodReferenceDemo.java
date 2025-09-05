@@ -14,5 +14,7 @@ public class MethodReferenceDemo {
 
         System.out.println(list.stream().map(Math::decrementExact).toList());
         
+        System.out.println(list.stream().filter(x->x%2==0).mapToDouble(Integer::doubleValue)  // convert Stream<Integer> to IntStream
+        .sum());
     }
 }
